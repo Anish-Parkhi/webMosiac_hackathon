@@ -2,6 +2,7 @@
   width: 20%;
   height: 18rem;
   perspective: 1000px;
+  overflow: hidden;
 }
 
 .cardContainerWrapper:hover .flipContainer {
@@ -42,11 +43,12 @@
 }
 
 .imageContainer {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   flex-basis: 40%;
+  height: 60%;
 }
 
 .bottomContianer {

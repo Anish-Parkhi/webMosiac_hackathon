@@ -11,7 +11,7 @@ import Navabar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import styles from './Home.module.css';
 
-const images = [img1, img2, img3, img4, img5, img6];
+const images = [img4, img6, img5, img2, img1, img3];
 function Home() {
   const [data, setdata] = useState([]);
   useEffect(() => {
