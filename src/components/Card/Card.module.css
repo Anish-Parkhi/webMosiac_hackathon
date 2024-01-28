@@ -1,0 +1,54 @@
+.cardContainerWrapper {
+  width: 20%;
+  background-color: #c7d8f6;
+  border-radius: 0.5rem;
+}
+
+.imageContainer {
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.bottomContianer {
+  padding: 0.5rem;
+}
+
+.titleContainer {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.likeDislikeContainer{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    background-color: #FFF6D5;
+    margin-top: 0.5rem;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.likeContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.likeImage{
+    width: 100%;
+    object-fit: contain;
+}
+
+.dislikeContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dislikeImage{
+    width: 100%;
+    object-fit: contain;
+}

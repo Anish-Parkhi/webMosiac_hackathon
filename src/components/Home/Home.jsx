@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from '../Card/Card';
 import Navabar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import styles from './Home.module.css';
@@ -8,8 +9,9 @@ function Home() {
     <div className={styles.homeWrapperContainer}>
       <div className={styles.homeMainContainer}>
         <Navabar />
-        <div>Hello</div>
-        {/* rest code of home  */}
+        <div className={styles.cardWrapperContainer}>
+          <Card />
+        </div>
       </div>
       <div className={styles.sidebarWrapperContainer}>
         <Sidebar />
