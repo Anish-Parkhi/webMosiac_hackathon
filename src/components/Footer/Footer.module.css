@@ -1,0 +1,8 @@
+.footerMainContainer{
+    background-color: #899CFF;
+    padding: 2rem;
+    /* width: 100%; */
+    font-size: 1.5rem;
+    text-align: right;
+    color: #000000;
+}

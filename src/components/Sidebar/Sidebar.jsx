@@ -1,10 +1,10 @@
 import React from 'react';
-import f35 from '../../assets/webMosiacImages/delih.jpeg';
 import styles from './Sidebar.module.css';
-
+import { useNavigate } from 'react-router-dom';
 
 
 function Sidebar({data, images}) {
+  const navigate = useNavigate();
   return (
     <div className={styles.sidebarMainContainer}>
       <div className={styles.searchBarMainContainer}>
@@ -29,7 +29,9 @@ function Sidebar({data, images}) {
         const firstWords = item.name.slice(0,14);
         return (
           <div>
-            <div className={styles.sideBarListContainer}>
+            <div onClick={() => {
+              navigate(`/blog/${item.id}`)
+            }} className={styles.sideBarListContainer}>
               <div className={styles.sidebarListContainerInfo}>
                 <div className={styles.sidebarListContainerInfoTopContainer}>
                   <div style={{ color: '#0080ff', fontSize: '0.7rem' }}>

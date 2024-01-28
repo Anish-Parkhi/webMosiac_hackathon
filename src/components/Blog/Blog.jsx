@@ -69,7 +69,7 @@ function Blog() {
         <div className={styles.blogContainerText}>{data.body}</div>
         <div className={styles.blogLikeCounter}>
           <div>
-            Likes: {data.likes} | Dislike: {data.dislikes}
+            Likes: {data.likes} | Dislikes: {data.dislikes}
           </div>
           <div>By {author?.name}</div>
         </div>
