@@ -11,6 +11,7 @@ import Navabar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import styles from './Home.module.css';
 import Footer from '../Footer/Footer';
+import loadMore from '../../assets/more.png'
 
 const images = [img4, img6, img5, img2, img1, img3];
 function Home() {
@@ -44,6 +45,10 @@ function Home() {
                 />
               );
             })}
+          </div>
+          <div className={styles.loadMoreContainer}>
+            <img className={styles.loadMoreImage} src={loadMore} />
+            <div className={styles.loadMoreText}>Load More</div>
           </div>
         </div>
         <div className={styles.sidebarWrapperContainer}>

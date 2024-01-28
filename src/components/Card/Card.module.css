@@ -1,6 +1,6 @@
 .cardContainerWrapper {
   width: 20%;
-  height: 18rem;
+  height: 16rem;
   perspective: 1000px;
   overflow: hidden;
 }
@@ -43,7 +43,7 @@
 }
 
 .imageContainer {
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;

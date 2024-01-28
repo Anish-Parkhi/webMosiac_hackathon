@@ -1,9 +1,8 @@
 import React from 'react';
-import styles from './Sidebar.module.css';
 import { useNavigate } from 'react-router-dom';
+import styles from './Sidebar.module.css';
 
-
-function Sidebar({data, images}) {
+function Sidebar({ data, images }) {
   const navigate = useNavigate();
   return (
     <div className={styles.sidebarMainContainer}>
@@ -25,13 +24,16 @@ function Sidebar({data, images}) {
           </div>
         </div>
       </div>
-      {data?.map((item,index) => {
-        const firstWords = item.name.slice(0,14);
+      {data?.map((item, index) => {
+        const firstWords = item.name.slice(0, 14);
         return (
           <div>
-            <div onClick={() => {
-              navigate(`/blog/${item.id}`)
-            }} className={styles.sideBarListContainer}>
+            <div
+              onClick={() => {
+                navigate(`/blog/${item.id}`);
+              }}
+              className={styles.sideBarListContainer}
+            >
               <div className={styles.sidebarListContainerInfo}>
                 <div className={styles.sidebarListContainerInfoTopContainer}>
                   <div style={{ color: '#0080ff', fontSize: '0.7rem' }}>
@@ -52,6 +54,7 @@ function Sidebar({data, images}) {
           </div>
         );
       })}
+      <div style={{ textAlign: 'right', cursor: 'pointer' }}>Load More</div>
     </div>
   );
 }

@@ -12,7 +12,6 @@ function Card({ name, id, image}) {
             <div className={styles.titleContainer}>
               {name}
             </div>
-            <div>By Anish Parkhi</div>
           </div>
         </div>
         <div className={styles.cardBack}>
