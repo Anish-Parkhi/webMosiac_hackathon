@@ -1,0 +1,99 @@
+.sidebarMainContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.searchBarMainContainer{
+    display: flex;
+}
+.searchBar{
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+.middleContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.middleContainerTopBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.middleContainerCardContaienr{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-image: url(../../assets/webMosiacImages/f35.jpeg);
+    padding: 2rem;
+    background-size: 100%;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: start;
+    align-items: flex-end;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.middleContainerCardContaienr:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.middleContainerCardContaienrText{
+    align-items: flex-end;
+    position: relative;
+    top: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.middleContainerCardContaienr:hover{
+    color: #FFF1DF;
+}
+
+.sidebarListContainerInfoTopContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.sidebarListContainerInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.sideBarListContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebarListContainerInfoText{
+    font-size: 0.8rem;
+    flex-basis: 50%;
+}
+
+.sideBarListContaierImage{
+    flex-basis: 50%;
+    height: 100%;
+}
+
+.sideBarListImage{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 0.2rem;
+}

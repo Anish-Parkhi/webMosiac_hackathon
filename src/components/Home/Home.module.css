@@ -3,7 +3,6 @@
     flex-direction: row;
     width: 100%;
     flex: 1;
-    height: 100vh;
 }
 .homeMainContainer{
     flex-basis: 80%;
