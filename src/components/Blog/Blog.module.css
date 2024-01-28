@@ -1,0 +1,41 @@
+.readMoreWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.readMoreSectionContainer{
+    display: flex;
+    flex-direction: column;
+}
+.blogContainer{
+    width: 85%;
+    align-self: center;
+    margin: auto;
+    padding: 0.4rem;
+}
+.blogContainerHeader{
+    font-size: 1.8rem ;
+    font-weight: 600;
+}
+.blogContainerText{
+    width: 90%;
+}
+
+.blogLikeCounter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.readMoreSectionContainer{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

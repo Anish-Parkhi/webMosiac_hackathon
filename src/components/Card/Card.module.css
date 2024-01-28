@@ -1,7 +1,44 @@
 .cardContainerWrapper {
   width: 20%;
+  height: 18rem;
+  perspective: 1000px;
+}
+
+.cardContainerWrapper:hover .flipContainer {
+  transform: rotateY(180deg);
+}
+
+.flipContainer {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+}
+
+.cardFront,
+.cardBack {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.cardFront {
   background-color: #c7d8f6;
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardBack {
+  background-color: #aecbf5;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
 }
 
 .imageContainer {
@@ -9,10 +46,15 @@
   width: 100%;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+  flex-basis: 40%;
 }
 
 .bottomContianer {
   padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .titleContainer {
@@ -20,35 +62,51 @@
   font-weight: 600;
 }
 
-.likeDislikeContainer{
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    padding: 0.2rem;
-    border-radius: 0.5rem;
-    background-color: #FFF6D5;
-    margin-top: 0.5rem;
-    gap: 1rem;
-    padding: 0.5rem;
+.likeDislikeContainer {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  background-color: #fff6d5;
+  margin-top: 0.5rem;
+  gap: 1rem;
+  padding: 0.5rem;
 }
 
-.likeContainer{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-.likeImage{
-    width: 100%;
-    object-fit: contain;
+.likeContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-.dislikeContainer{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.likeImage {
+  width: 100%;
+  object-fit: contain;
 }
 
-.dislikeImage{
-    width: 100%;
-    object-fit: contain;
+.dislikeContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.dislikeImage {
+  width: 100%;
+  object-fit: contain;
+}
+
+.viewMoreButton {
+  display: none;
+  background-color: #3498db;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardContainerWrapper:hover .viewMoreButton {
+  display: block;
 }

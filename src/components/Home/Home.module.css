@@ -17,4 +17,27 @@
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.feedContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 93.5%;
+    font-size: 1.2rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.feedContainerWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.sortContainer{
+    display: flex;
+    flex-direction: row;
+    
 }

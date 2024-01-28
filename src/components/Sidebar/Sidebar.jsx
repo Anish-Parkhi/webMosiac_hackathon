@@ -2,9 +2,9 @@ import React from 'react';
 import f35 from '../../assets/webMosiacImages/delih.jpeg';
 import styles from './Sidebar.module.css';
 
-const data = [1, 2, 3, 4, 5, 6];
 
-function Sidebar() {
+
+function Sidebar({data, images}) {
   return (
     <div className={styles.sidebarMainContainer}>
       <div className={styles.searchBarMainContainer}>
@@ -25,16 +25,17 @@ function Sidebar() {
           </div>
         </div>
       </div>
-      {data.map((item) => {
+      {data?.map((item,index) => {
+        const firstWords = item.name.slice(0,14);
         return (
           <div>
             <div className={styles.sideBarListContainer}>
               <div className={styles.sidebarListContainerInfo}>
                 <div className={styles.sidebarListContainerInfoTopContainer}>
-                  <div style={{ color: '#0080ff', fontSize: '0.9rem' }}>
-                    Hello
+                  <div style={{ color: '#0080ff', fontSize: '0.7rem' }}>
+                    {firstWords}..
                   </div>
-                  <div style={{ fontSize: '0.7rem' }}>4 Hours ago</div>
+                  <div style={{ fontSize: '0.6rem' }}>4 Hours ago</div>
                 </div>
                 <div className={styles.sidebarListContainerInfoText}>
                   Neque porro quisquam est qui dolorem ipsum quia dolor sit
@@ -42,7 +43,7 @@ function Sidebar() {
                 </div>
               </div>
               <div className={styles.sideBarListContaierImage}>
-                <img className={styles.sideBarListImage} src={f35} />
+                <img className={styles.sideBarListImage} src={images[index]} />
               </div>
             </div>
             <hr />
