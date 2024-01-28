@@ -8,6 +8,7 @@ import img3 from '../../assets/webMosiacImages/job.png';
 import img1 from '../../assets/webMosiacImages/sports.jpeg';
 import img5 from '../../assets/webMosiacImages/startup.jpg';
 import Card from '../Card/Card';
+import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 import styles from './Blog.module.css';
 
@@ -46,7 +47,6 @@ function Blog() {
         console.log(err);
       });
   }, [data]);
-
 
   useEffect(() => {
     axios
@@ -89,6 +89,7 @@ function Blog() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
